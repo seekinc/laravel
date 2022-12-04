@@ -1,0 +1,66 @@
+<html>
+<!--https://www.jb51.net/article/172542.htm-->
+<head>
+    <title>后台登录</title>
+    <!--解决html中文在浏览器中显示乱码-->
+    <meta http-equiv="Content-Type"content="text/html;charset=utf-8">
+
+    <style>
+        body{
+
+        }
+       ul li{
+           margin-top: 5px;
+           list-style: none
+        }
+
+       .content{
+           background: rgba(11, 94, 215, 0.51);
+           box-shadow: rgb(98, 98, 98) 0px 0px 2px, rgb(54, 52, 52) 0px 0px 3px;
+           border-radius: 15px;
+           height: 190px;
+           width: 450px;
+           top: 0;
+           bottom: 50px;
+           left: 0;
+           right:0;
+           position: absolute;
+           margin: auto;
+
+       }
+    </style>
+</head>
+<body>
+<!--<h1>用户登录</h1>-->
+<form action="login.php" method="post">
+    <div class="content">
+<!--    <fieldset>-->
+        <h2 style="text-align: center">用户登录</h2>
+<!--        <legend></legend>-->
+        <ul style="text-align: center">
+            <li>
+                <label>用户名：</label>
+                <input type="text" name="username">
+            </li>
+            <li>
+                <label>密&nbsp;&nbsp;&nbsp;码：</label>
+                <input type="password" name="passwd">
+            </li>
+            <li>
+                <label> </label>
+                <input type="checkbox" name="remember" value="yes"> 七天内自动登录
+            </li>
+            <li>
+                <label> </label>
+                <input type="submit" name="login" value="登录"> <input style="margin-left: 20px" type="reset" name="reset" value="重置"> </td> </tr>
+            </li>
+            <li>
+                <label> <label>
+<!--                    <td colspan="2" align="center"> 还没有账号，快去<a href="register.php" rel="external nofollow" >注册</a>吧</td>                </li>-->
+        </ul>
+<!--    </fieldset>-->
+    </div>
+</form>
+</body>
+</html>
+

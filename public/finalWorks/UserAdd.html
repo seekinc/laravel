@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <title>添加学生党员信息</title>
+    <style>
+        h2 {
+            text-align: center
+        }
+        form {
+            width: 400px;
+            margin: 10px auto;
+            background: rgba(248, 248, 248, 0.64);
+            padding: 20px;
+            border-radius: 8px;
+            /*padding-left: 130px;*/
+        }
+        tr {
+            height: 30px;
+            line-height: 30px;
+        }
+        input[type='text'], input[type='date'], select {
+            height: 25px;
+            line-height: 25px;
+            width: 150px;
+        }
+        .btn {
+            padding: 8px 20px;
+            background-color: #2795F7;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .list{
+            box-shadow: rgb(203, 203, 203) 0px 0px 2px;
+            border-radius: 15px;
+            background: rgba(84, 156, 208, 0.13);
+            height: 500px;
+            width: 600px;
+            position: absolute;
+            top: 0;
+            bottom: 25%;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+<!--<h2>添加学生党员信息</h2>-->
+<form  action="" method="post">
+
+    <table>
+
+        <tr>
+            <td style="border: 0">用户名：</td>
+            <td style="border: 0"><input type="text" name="username"></td>
+        </tr>
+        <tr>
+            <td style="border: 0">密码：</td>
+            <td style="border: 0"><input type="text" name="passwd"></td>
+        </tr>
+        <tr>
+            <td  style="border: 0" colspan="2">
+                <input type="submit" value="立即提交" class="btn"/>
+                <input type="reset" value="重新填写" class="btn"/>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

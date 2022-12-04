@@ -1,0 +1,105 @@
+
+
+
+    <!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../../css/bootstrap.min.css">
+<!--        <link rel="stylesheet" href="https://www.layuicdn.com/layui-v2.6.8/css/layui.css">-->
+        <script type="text/javascript" src="https://www.layuicdn.com/layui-v2.6.8/layui.js"/>
+        <title>新闻管理系统</title>
+        <script>
+            layui.use('element', function(){
+                var element = layui.element;
+            });
+        </script>
+<script src="https://beacon-v2.helpscout.help/static/js/vendor.06c7227b.js"></script>
+        <style>
+            body {
+                padding: 0 10%;
+            }
+            h2 {
+                text-align: center;
+                font-size: 40px;
+            }
+            table {
+                border-collapse: collapse;
+                font-size: 16px;
+            }
+            th {
+                background-color: #DADBDC
+            }
+            th, td {
+                align-self: center;
+                border: 1px solid #000000;
+                height: 35px;
+                text-align: center
+            }
+            input[type='text'] {
+                height: 25px;
+                line-height: 25px;
+                width: 150px;
+            }
+            input[type='submit'] {
+                padding: 6px 20px;
+                background-color: #2795F7;
+                color: #ffffff;
+                border: none;
+                border-radius: 5px;
+                margin-top: 10px;
+            }
+
+            a {
+                text-decoration: none;
+                display: inline-block;
+                margin-right: 10px;
+                margin-top: 10px;
+                color: #007DDB;
+            }
+        </style>
+
+
+
+        <style>
+
+        </style>
+    </head>
+    <body>
+    <center>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h2 style="padding-bottom: 25px">分类管理</h2>
+            </div>
+            <div class="panel-body form-inline">
+            </div>
+        </div>
+        <table class="table table-bordered table-hover table-striped" style="width: 35%">
+            <thead>
+            <tr>
+                <th style="width: 65%">分类名称</th>
+                <th style="text-align: center">操作</th>
+            </tr>
+            </thead>
+
+</table>
+</center>
+<script>
+    function catemodify(){
+        layer.open({
+            type: 1,
+            skin: 'layui-layer-rim', //加上边框
+            area: ['600px', '600px'], //宽高
+            content: '<iframe src="categoryModify.php?id=<?=$row['id']?>" width="550px" height="355px" ' +
+                'overflow:hidden; frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" allowTransparency="true" > </iframe>',
+        });
+    }
+
+    function dodel(id){
+        if (confirm("确定要删除吗")){
+            window.location="action.php?action=del&id="+id;
+        }
+    }
+</script>
+</body>
+</html>
